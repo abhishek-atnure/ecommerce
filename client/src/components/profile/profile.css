@@ -1,0 +1,101 @@
+.profile {
+    margin-left: 40px;
+}
+
+.profile .drop-btn {
+    width: 150px;
+    border: 2px solid black;
+    border-width: thin;
+    line-height: 36px;
+    padding: 0 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 400;
+
+}
+#drop-btn{
+width: 150px;
+border: 2px solid black;
+border-width: thin;
+line-height: 36px;
+padding: 0 20px;
+cursor: pointer;
+font-size: 15px;
+font-weight: 400;
+}
+
+#drop-btn:hover{
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.profile .drop-btn #dropArrow {
+    float: right;
+    line-height: 36px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+.profile .drop-btn .iconP {
+    padding-right: 15px;
+    pointer-events: none;
+
+}
+
+.menuItems {
+    position: absolute;
+    top: 50px;
+    display: none;
+    width: 190px;
+    background: white;
+    z-index: 2;
+    border-radius: 5px;
+    border: 2px solid black;
+    border-width: thin;
+
+}
+
+.menuItems.show {
+    display: block;
+    display: flex;
+}
+
+.profile .menuItems ul {
+    width: 400px;
+    padding: 10px;
+}
+
+.profile .menuItems ul li {
+    line-height: 40px;
+}
+
+.profile .menuItems ul a {
+    text-decoration: none;
+    color:
+        black;
+    display: flex;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 10px;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.profile .menuItems ul li:hover a {
+
+    border: 2px solid black;
+    border-width: thin;
+}
+
+.menuItems ul li a .icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 13px;
+    background: #ffffff1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+}

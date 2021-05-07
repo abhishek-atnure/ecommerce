@@ -1,0 +1,12 @@
+.search-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  align-content: center;
+  margin: auto;
+  padding: 40px 60px;
+  font-size: 30px;
+  letter-spacing: 2px;
+}

@@ -1,0 +1,84 @@
+.profile-headings {
+  display: flex;
+  justify-content: space-between;
+}
+
+#name-head {
+  margin: 60px 50px;
+}
+
+#edit-head {
+  margin: 30px;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+  .one {
+    display: flex;
+  }
+}
+
+form {
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px 30px 0;
+}
+
+.row label {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.row input {
+  padding: 8px 60px;
+  margin-right: 40px;
+  font-size: 15px;
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.submit-button button {
+  position: relative;
+  padding: 5px 10px;
+  border-radius: 5px;
+  left: -15px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  border-color: black;
+  background-color: black;
+  color: white;
+}
+
+.submit-button a {
+  position: relative;
+  left: -13px;
+  margin: 15px 0 20px 0;
+  border-bottom: 2px solid black;
+  cursor: pointer;
+}

@@ -1,0 +1,123 @@
+.checkout-page {
+  display: flex;
+  flex-direction: column;
+}
+
+#checkout-head {
+  margin: 30px 30px 5px 30px;
+}
+
+#checkout-name {
+  margin: 30px;
+  font-size: 20px;
+}
+
+#checkout-name span {
+  border-bottom: 1px solid;
+}
+
+#checkout-amount {
+  margin: 10px 0 0 30px;
+  font-size: 20px;
+}
+
+#checkout-amount-span {
+  font-weight: 600;
+  color: mediumpurple;
+}
+
+.checkout-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address-detail label {
+  margin: 30px 0 0 30px;
+  font-size: 18px;
+}
+
+.address-detail input {
+  padding: 8px;
+  margin: 20px 0 0 30px;
+  width: 64%;
+  border: 1px solid;
+}
+
+.payment {
+  display: inline-flex;
+  flex-direction: column;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 30px;
+  margin: 30px;
+  width: 61%;
+}
+
+.payment #payment-head {
+  /* margin: 30px; */
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 30px;
+}
+
+.payment label {
+  margin: 30px 0 0 0;
+  font-size: 15px;
+}
+
+.payment span {
+  color: red;
+  opacity: 0.6;
+}
+
+.methods {
+  display: flex;
+  margin-top: 15px;
+}
+
+.methods input {
+  margin: 30px 10px 0 0;
+  cursor: pointer;
+}
+
+#last-btn {
+  margin: 0 8px 30px 30px;
+  padding: 10px 15px;
+  width: 150px;
+
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px;
+  background: linear-gradient(to right, #732fdf, #bd00ff);
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+#tagline {
+  font-size: 18px;
+  margin: 20px 0;
+
+  font-weight: 600;
+  padding: 10px;
+  width: 100%;
+  background: white;
+  text-align: center;
+}
+
+#modal-btn {
+  padding: 10px 15px;
+  width: 10rem;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px;
+  background: linear-gradient(to right, #732fdf, #bd00ff);
+  cursor: pointer;
+}
