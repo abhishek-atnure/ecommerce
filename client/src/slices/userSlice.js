@@ -52,9 +52,10 @@ export const signupUser = createAsyncThunk(
         toast.success("Registered Sucessfully...");
         localStorage.removeItem("token");
       }
-      toast.error(json);
+
       return json;
     } catch (error) {
+      toast.error("already exists")
       console.error(error.message);
     }
   }
