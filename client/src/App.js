@@ -42,7 +42,7 @@ function App() {
           }
         );
         const data = await response.json();
-        data === true ? dispatch(authenticated()) : dispatch(notAuthenticated);
+        data === true ? dispatch(authenticated()) : dispatch(notAuthenticated());
       } catch (error) {
         console.error(error.message);
       }
