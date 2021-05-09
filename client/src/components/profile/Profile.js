@@ -27,7 +27,7 @@ export function Profile() {
     try {
       await localStorage.removeItem("token");
       toast.success("logged out successfully!");
-      window.location = "/login";
+      window.location.reload()
     } catch (error) {
       toast.error("Please try again later !");
     }
@@ -58,9 +58,10 @@ export function Profile() {
           >
             {" "}
             <FontAwesomeIcon icon={faAngleDown} />
-          </span>) : (<link to="/login">
-
-          </link>)}
+          </span>) : (<Link to="/login">
+            <span id="dropArrow">
+              <FontAwesomeIcon icon={faAngleDown} /></span>
+          </Link>)}
       </div>
 
       <div id="menuItems" className="menuItems">
@@ -77,8 +78,8 @@ export function Profile() {
             </Link>
           </li>
 
-          <li>
-            <Link to="/logout" onClick={(e) => logout(e)}>
+          <li onClick={(e) => logout(e)}>
+            <Link  >
               <div className="icon">
                 <FontAwesomeIcon icon={faSignOutAlt} />
               </div>

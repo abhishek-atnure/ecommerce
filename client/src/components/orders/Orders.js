@@ -35,10 +35,10 @@ export default function Orders() {
               <p className="order-page_text">{product.description}</p>
             </div>
             <div className="order-page_buttons">
-              <h3>
+              {/* <h3>
                 <span id="order-page_status">Status:</span>
                 <span id="order-page_cta">{product.order_status}</span>
-              </h3>
+             </h3>*/}
             </div>
           </div>
         </div>

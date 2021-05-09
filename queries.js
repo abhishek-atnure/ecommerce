@@ -232,23 +232,20 @@ const getAllOrders = async (req, res) => {
     const { user_id } = req.params;
 
     const allOrders = await pool.query(
-      `select 
-            cart_product.cart_id,name,description,
-            product.img_url as image,
-            cart_product.price,cart_product.quantity,
-            orders.order_status, orders.time as time 
-            from product,cart_product,orders
-            where product.id=cart_product.product_id
-                and 
-            order_id in (select id from orders where customer_id=$1 )
-            group by 
-            cart_product.cart_id,name,
-            product.img_url, 
-            description, 
-            cart_product.price,
-            cart_product.quantity,
-            orders.order_status,
-            orders.time`,
+      `  select 
+      cart_product.cart_id,name,description,
+product.img_url as image,
+      cart_product.price,cart_product.quantity
+      from product,cart_product,orders
+      where product.id=cart_product.product_id
+          and 
+      order_id in (select id from orders where customer_id=$1 )
+      group by
+          cart_product.cart_id,name, 
+          description, 
+          cart_product.price,
+          product.img_url,
+          cart_product.quantity`,
       [user_id]
     );
     res.json(allOrders.rows);

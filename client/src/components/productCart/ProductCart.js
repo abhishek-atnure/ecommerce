@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import "./productCart.css";
 import { useSelector, useDispatch } from "react-redux";
+import { Link } from "react-router-dom"
 import { cartFetch, selectCart, singleCartFetch } from "../../slices/cartSlice";
 import { userSelector } from "../../slices/userSlice";
 import { authSelector } from "../../slices/authSlice";
@@ -36,14 +37,18 @@ export function ProductCart({ product, children }) {
 
         <h3 id="product-name">{product.name}</h3>
         <span id="product-price">₹ {product.price}</span>
-        <button
+        {/*   <button
           id="add-to-cart"
           onClick={() =>
             !auth ? (window.location = "/login") : toCart(product)
           }
         >
           Add to Cart
-        </button>
+        </button>*/}
+        {
+          !auth ? <Link to="/login"><button id="add-to-cart">Add to cart</button></Link> :
+            <button id="add-to-cart" onClick={() => toCart(product)}>Add to cart</button>
+        }
       </div>
     </Fragment>
   );
