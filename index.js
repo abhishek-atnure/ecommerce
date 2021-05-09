@@ -3,6 +3,7 @@ const app = express();
 const morgan = require("morgan");
 const cors = require("cors");
 const path = require("path");
+const timeout = require("connect-timeout");
 
 require("dotenv").config();
 const PORT = process.env.PORT || 5000;
@@ -13,6 +14,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "client/build")));
 }
 
+app.use(timeout("5s"));
 app.use(express.json());
 app.use(morgan("dev"));
 app.use(cors());
