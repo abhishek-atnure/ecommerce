@@ -14,7 +14,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "client/build")));
 }
 
-app.use(timeout("5s"));
+app.use(timeout("10s"));
 app.use(express.json());
 app.use(morgan("dev"));
 app.use(cors());
