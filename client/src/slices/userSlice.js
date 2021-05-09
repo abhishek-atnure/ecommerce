@@ -48,7 +48,7 @@ export const signupUser = createAsyncThunk(
       const json = await data.json();
       localStorage.setItem("token", json.token);
       if (json.token) {
-        window.location = "/login";
+
         toast.success("Registered Sucessfully...");
         localStorage.removeItem("token");
       }

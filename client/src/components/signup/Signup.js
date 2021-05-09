@@ -110,10 +110,10 @@ export default function Signup() {
               required
             ></input>
           </div>
-
-          <button className="signup-btn" onClick={(e) => handleSubmit(e)}>
-            Sign Up
-          </button>
+          <Link to="login">
+            <button className="signup-btn" onClick={(e) => handleSubmit(e)}>
+              Sign Up
+          </button> </Link>
         </form>
       </div>
     </Fragment>
