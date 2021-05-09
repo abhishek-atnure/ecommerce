@@ -21,8 +21,11 @@ export default function Login() {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+
     dispatch(loginUser(inputs));
+
+
+
   };
 
   useEffect(() => {
@@ -78,10 +81,11 @@ export default function Login() {
               required
             ></input>
           </div>
-
-          <button className="signup-btn" onClick={(e) => handleSubmit(e)}>
-            Log in
+          <Link to="/">
+            <button className="signup-btn" onClick={(e) => handleSubmit(e)}>
+              Log in
           </button>
+          </Link>
         </form>
       </div>
     </Fragment>

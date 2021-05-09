@@ -20,7 +20,7 @@ export const loginUser = createAsyncThunk(
 
       localStorage.setItem("token", json.token);
       if (json.token) {
-        window.location = "/";
+
         toast.success("Logged in sucessfully !");
       }
       toast.error(json);

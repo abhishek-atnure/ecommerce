@@ -25,8 +25,9 @@ export default function Signup() {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+
     dispatch(signupUser(inputs));
+
   };
 
   useEffect(() => {
@@ -110,7 +111,7 @@ export default function Signup() {
               required
             ></input>
           </div>
-          <Link to="login">
+          <Link to="/login" >
             <button className="signup-btn" onClick={(e) => handleSubmit(e)}>
               Sign Up
           </button> </Link>

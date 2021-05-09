@@ -122,3 +122,102 @@ label {
   margin: 1.5rem 0;
   font-size: 0.875rem;
 }
+
+#log-in-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+#a-link {
+  text-decoration: none;
+  color: #233975;
+}
+
+#a-link:hover {
+  text-decoration: underline;
+}
+
+.right .copy {
+  color: black;
+  text-align: center;
+}
+
+.left,
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.right .copy #line-text {
+  margin: 1.5rem 0;
+  font-size: 0.875rem;
+}
+
+.right form {
+  width: 328px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"] {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid #c4c4c4;
+  padding: 1em;
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.input-container.password {
+  position: relative;
+}
+
+.signup-btn {
+  display: block;
+  width: 100%;
+  background: black;
+  color: white;
+  font-weight: 700;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 10px 0;
+}
+
+.signup-btn:hover {
+  background: #79b9ec;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+  .split-screen {
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .left,
+  .right {
+    display: flex;
+    width: 50%;
+    height: auto;
+  }
+}
