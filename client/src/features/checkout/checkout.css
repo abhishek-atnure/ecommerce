@@ -121,3 +121,10 @@
   background: linear-gradient(to right, #732fdf, #bd00ff);
   cursor: pointer;
 }
+
+@media screen and (max-width: 868px) {
+  #address{
+    width: 80%;
+    height: 20px;
+  }
+}

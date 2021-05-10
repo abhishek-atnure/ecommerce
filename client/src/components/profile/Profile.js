@@ -23,6 +23,9 @@ export function Profile() {
     menu.classList.toggle("show");
   };
 
+
+
+
   const logout = async (e) => {
     try {
       await localStorage.removeItem("token");
