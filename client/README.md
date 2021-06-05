@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+## you can check live version here https://shopy-ecom.herokuapp.com/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
