@@ -26,7 +26,7 @@
   top: 105px;
   font-size: 18px;
   border-bottom: 2px solid;
-  margin-left: -10px;
+  margin-left: -33px;
 }
 
 #clear-all-btn {
@@ -157,16 +157,15 @@
     transform: translate(0, -8rem);
   }
 
-  .checkout span{
-    font-size:20px;
-
+  .checkout span {
+    font-size: 20px;
   }
-  .checkout .checkout-total{
+  .checkout .checkout-total {
     position: absolute;
     left: 150px;
   }
 
-  #clear-all-btn{
+  #clear-all-btn {
     margin-left: 10px;
   }
 }
