@@ -7,8 +7,8 @@ This project builds a fully-functioning e-commerce application that allows users
 browse products for sale, and complete a purchase. this project is deployed on heroku.
 
 ### Technologies
-#### React js / Redux toolkit
-#### Express js
-#### Node js
-#### postgreSQL
+###### React js / Redux toolkit
+###### Express js
+###### Node js
+###### postgreSQL
 
