@@ -33,8 +33,10 @@ option {
   .allProducts {
     display: flex;
     flex-flow: row wrap;
-    margin-left: 195px;
-    margin-bottom: 80px;
+    /* margin-left: 195px;
+    margin-bottom: 80px; */
+    justify-content: center;
+    margin: auto;
   }
 }
 
